@@ -5417,13 +5417,13 @@ object {
 }
 .video-popup a {
   position: relative;
-  width: 65px;
+  width: 200px;
   height: 65px;
   display: inline-block;
   background: #fff;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  -moz-border-radius: 50%; */
   text-align: center;
   line-height: 65px;
   color: #43baff;
@@ -5432,7 +5432,7 @@ object {
   margin-left: 8%;
 }
 .video-popup a i:before {
-  font-size: 21px;
+  font-size: 14px;
 }
 .video-popup a:hover {
   background: #43baff;
@@ -5451,9 +5451,9 @@ object {
   border: 1px solid rgba(255, 255, 255, 0.8);
   animation: circle-fade-before 2s infinite ease-in-out;
   -webkit-animation: circle-fade-before 2s infinite ease-in-out;
-  border-radius: 50%;
+  /* border-radius: 50%;
   -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
+  -moz-border-radius: 50%; */
 }
 .video-popup a .circle-2 {
   animation: circle-fade-after 2s infinite ease-in-out;
@@ -5987,16 +5987,16 @@ div.tp-bullet.selected, div.tp-bullet:hover {
 }
 .btn-play {
     position: relative;
-    width: 65px;
+    width: 200px;
     height: 65px;
     display: inline-block;
     background: #43baff;
-    border-radius: 50%;
+    /* border-radius: 50%;
     -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
+    -moz-border-radius: 50%; */
     text-align: center;
     line-height: 68px;
-    font-size: 19px;
+    font-size: 16px;
     color: #fff;
 }
 .btn-play i {
@@ -6654,7 +6654,7 @@ div.tp-bullet.selected, div.tp-bullet:hover {
 }
 .service-v5 {
     padding-top: 0;
-    padding-bottom: 110px;
+    /* padding-bottom: 110px; */
 }
 .serv-box.v5 {
     padding: 30px 40px 30px 40px;
@@ -6817,8 +6817,8 @@ div.tp-bullet.selected, div.tp-bullet:hover {
     background-position: bottom center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding-top: 20px;
+    padding-bottom: 10px;
 }
 .testimonials-style-2 .layer1 {
     box-shadow: 3px 3px 13px 0 rgba(0,0,0,.1);
@@ -11126,7 +11126,7 @@ svg:not(:root) {
 /* Footer */
 .footer-v1 {
     background-color: #201D3C;
-    padding: 115px 0 50px 0;
+    padding: 15px 0 15px 0;
     color: #AEAACB;
 }
 .widget-footer {
@@ -11232,8 +11232,8 @@ svg:not(:root) {
 
 /* HTML */
 section {
-    padding-top: 120px;
-    padding-bottom: 130px;
+    padding-top: 20px;
+    padding-bottom: 30px;
     position: relative;
 }
 .pbt-120 {
@@ -11919,3 +11919,53 @@ section {
   margin-right: auto;
   margin-top: 30px;
 }
+body button {
+  border: none;
+  background: transparent;
+  padding: 0 30px;
+  font-size: 20px;
+  line-height: 52px;
+  font-family: "Open Sans Condensed", sans-serif;
+  position: relative;
+  color: #3E4651;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+body button:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 48px;
+  background: transparent;
+  border: 2px solid #4AB9F2;
+  z-index: -1;
+  border-radius: 5px;
+  transition: 0.3s ease-in-out;
+}
+body button:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  height: 30px;
+  width: 80%;
+  z-index: -1;
+  transition: 0.3s linear;
+}
+body button:hover:after {
+  opacity: 0;
+  background: #4AB9F2;
+}
+body button:hover {
+  color: #fff;
+}
+body button:hover:before {
+  width: 100%;
+  background: #4AB9F2;
+  box-shadow: 0 10px 90px -2px rgba(0, 0, 0, 0.2);
+}
+
