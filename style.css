@@ -5862,7 +5862,7 @@ div.swiper-pagination-custom, .swiper-pagination-fraction {
     position: relative;
 }
 .bullet-home-1:after{
-    content: "/0"counter(item);
+    content: "/0" counter(item);
     position: absolute;
     left: 23px;
     top: 0;
@@ -5885,7 +5885,7 @@ div.swiper-pagination-custom, .swiper-pagination-fraction {
     visibility: visible;
 }
 .bullet-home-1 .tp-bullet:before{
-    content: "0"counter(item);
+    content: "0" counter(item);
 }
 div.tp-bullet.selected, div.tp-bullet:hover {
     background: transparent;
